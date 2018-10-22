@@ -26,6 +26,6 @@ app.get('/', function(req, res){
     }
 });*/
 
-app.listen(3000, function(){
-  console.log('Server listen port 3000 ...');
+app.listen(process.env.port || 5000, function(){
+  console.log('Server listen port ...' + process.env.port || 5000);
 });
