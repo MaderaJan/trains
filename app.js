@@ -1,6 +1,6 @@
 //Modules
 const express = require('express');
-const mysql = require('mysql');
+//const mysql = require('mysql');
 
 let app = express();
 
@@ -11,20 +11,20 @@ app.get('/', function(req, res){
     res.send('Honzlojova vlaková API');
 });
 
-var conn = mysql.createConnection({
-    host: "35.228.224.194",
-    user : "admin",
-    password : "123456"
-});
+//var conn = mysql.createConnection({
+    //host: "35.228.224.194",
+    //user : "admin",
+    //password : "123456"
+//});
 
-conn.connect(function(err) {
+/*conn.connect(function(err) {
     if (err) {
         console.log("NEJDEDETEDOD!!"); 
         console.log(err);
     } else {
         console.log("Honzloj hotovka");
     }
-});
+});*/
 
 app.listen(3000, function(){
   console.log('Server listen port 3000 ...');
